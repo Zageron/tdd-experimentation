@@ -47,12 +47,16 @@
     <IncludePath>include;$(SolutionDir)Externals\includes;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Externals\libs\gtest;$(SolutionDir)Externals\bin\gtest\$(PlatformTarget)\$(Configuration);$(LibraryPath)</LibraryPath>
     <ExecutablePath>$(SolutionDir)Externals\bin\gtest\$(PlatformTarget)\$(Configuration);$(ExecutablePath)</ExecutablePath>
+    <OutDir>$(SolutionDir)Builds\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>include;$(SolutionDir)Externals\includes;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)Externals\libs\gtest;$(LibraryPath)</LibraryPath>
     <ExecutablePath>$(SolutionDir)Externals\bin\gtest\$(PlatformTarget)\$(Configuration);$(ExecutablePath)</ExecutablePath>
+    <OutDir>$(SolutionDir)Builds\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
