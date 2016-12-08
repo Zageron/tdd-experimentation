@@ -45,13 +45,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>include;$(SolutionDir)Externals\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Externals\libs;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)Externals\libs\gtest;$(SolutionDir)Externals\bin\gtest\$(PlatformTarget)\$(Configuration);$(LibraryPath)</LibraryPath>
     <ExecutablePath>$(SolutionDir)Externals\bin\gtest\$(PlatformTarget)\$(Configuration);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>include;$(SolutionDir)Externals\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Externals\libs;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)Externals\libs\gtest;$(LibraryPath)</LibraryPath>
     <ExecutablePath>$(SolutionDir)Externals\bin\gtest\$(PlatformTarget)\$(Configuration);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -67,7 +67,8 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>gtestd.lib;gtest_maind.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -88,7 +89,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>gtest.lib;gtest_main.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
