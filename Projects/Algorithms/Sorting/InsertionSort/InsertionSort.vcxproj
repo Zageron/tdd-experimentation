@@ -10,6 +10,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InsertionSort.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
