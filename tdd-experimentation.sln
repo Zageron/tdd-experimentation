@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTestTemplate", "Googl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InsertionSort", "Projects\Algorithms\Sorting\InsertionSort\InsertionSort.vcxproj", "{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{5AD73DE5-340B-4222-A375-1D171933C6AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -28,6 +30,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1} = {F166C7B8-0AEB-47C0-AD7D-E553CE0E292F}
+		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1} = {5AD73DE5-340B-4222-A375-1D171933C6AE}
+		{5AD73DE5-340B-4222-A375-1D171933C6AE} = {F166C7B8-0AEB-47C0-AD7D-E553CE0E292F}
 	EndGlobalSection
 EndGlobal
