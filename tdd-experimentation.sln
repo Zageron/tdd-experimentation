@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sorting", "Projects\Algorithms\Sorting\Sorting.vcxproj", "{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{F166C7B8-0AEB-47C0-AD7D-E553CE0E292F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTestTemplate", "GoogleTestTemplate\GoogleTestTemplate.vcxproj", "{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InsertionSort", "Projects\Algorithms\Sorting\InsertionSort\InsertionSort.vcxproj", "{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +15,14 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Debug|x64.ActiveCfg = Debug|x64
-		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Debug|x64.Build.0 = Debug|x64
-		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Release|x64.ActiveCfg = Release|x64
-		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Release|x64.Build.0 = Release|x64
 		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Debug|x64.ActiveCfg = Debug|x64
 		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Debug|x64.Build.0 = Debug|x64
 		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Release|x64.ActiveCfg = Release|x64
 		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Release|x64.Build.0 = Release|x64
+		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Debug|x64.ActiveCfg = Debug|x64
+		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Debug|x64.Build.0 = Debug|x64
+		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Release|x64.ActiveCfg = Release|x64
+		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
