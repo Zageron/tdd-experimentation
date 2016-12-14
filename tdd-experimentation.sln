@@ -7,6 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTestTemplate", "GoogleTestTemplate\GoogleTestTemplate.vcxproj", "{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortingTests", "SortingTests\SortingTests.vcxproj", "{AD810882-F575-4129-B03D-042DC26B6300}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1} = {D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}
+	EndProjectSection
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InsertionSort", "Projects\Algorithms\Sorting\InsertionSort\InsertionSort.vcxproj", "{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{5AD73DE5-340B-4222-A375-1D171933C6AE}"
@@ -21,6 +26,10 @@ Global
 		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Debug|x64.Build.0 = Debug|x64
 		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Release|x64.ActiveCfg = Release|x64
 		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Release|x64.Build.0 = Release|x64
+		{AD810882-F575-4129-B03D-042DC26B6300}.Debug|x64.ActiveCfg = Debug|x64
+		{AD810882-F575-4129-B03D-042DC26B6300}.Debug|x64.Build.0 = Debug|x64
+		{AD810882-F575-4129-B03D-042DC26B6300}.Release|x64.ActiveCfg = Release|x64
+		{AD810882-F575-4129-B03D-042DC26B6300}.Release|x64.Build.0 = Release|x64
 		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Debug|x64.ActiveCfg = Debug|x64
 		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Debug|x64.Build.0 = Debug|x64
 		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}.Release|x64.ActiveCfg = Release|x64
@@ -30,6 +39,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{AD810882-F575-4129-B03D-042DC26B6300} = {F166C7B8-0AEB-47C0-AD7D-E553CE0E292F}
 		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1} = {5AD73DE5-340B-4222-A375-1D171933C6AE}
 		{5AD73DE5-340B-4222-A375-1D171933C6AE} = {F166C7B8-0AEB-47C0-AD7D-E553CE0E292F}
 	EndGlobalSection
