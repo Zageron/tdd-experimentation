@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{F166C7B8-0AEB-47C0-AD7D-E553CE0E292F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTestTemplate", "GoogleTestTemplate\GoogleTestTemplate.vcxproj", "{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortingTests", "SortingTests\SortingTests.vcxproj", "{AD810882-F575-4129-B03D-042DC26B6300}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1} = {D5E1E42E-44AD-41DB-ABDD-DE1B0AC736A1}
@@ -22,10 +20,6 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Debug|x64.ActiveCfg = Debug|x64
-		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Debug|x64.Build.0 = Debug|x64
-		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Release|x64.ActiveCfg = Release|x64
-		{F3803DEB-D1E2-4B6C-A32D-6C92B7F715B2}.Release|x64.Build.0 = Release|x64
 		{AD810882-F575-4129-B03D-042DC26B6300}.Debug|x64.ActiveCfg = Debug|x64
 		{AD810882-F575-4129-B03D-042DC26B6300}.Debug|x64.Build.0 = Debug|x64
 		{AD810882-F575-4129-B03D-042DC26B6300}.Release|x64.ActiveCfg = Release|x64
