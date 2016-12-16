@@ -103,12 +103,12 @@
     <ClCompile Include="InsertionSort.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HelperFunctions.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Projects\Algorithms\Sorting\InsertionSort\InsertionSort.vcxproj">
       <Project>{d5e1e42e-44ad-41db-abdd-de1b0ac736a1}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="HelperFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
