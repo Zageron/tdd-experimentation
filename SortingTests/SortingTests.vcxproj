@@ -45,18 +45,18 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>include;$(SolutionDir)Externals\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Externals\libs\gtest\Dynamic\$(Configuration);$(LibraryPath)</LibraryPath>
     <ExecutablePath>$(SolutionDir)Externals\bin\gtest\Dynamic\$(Configuration);$(ExecutablePath)</ExecutablePath>
     <OutDir>$(SolutionDir)Builds\$(ProjectName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir).inter\$(ProjectName)\$(Configuration)\</IntDir>
+    <LibraryPath>$(SolutionDir)Externals\libs\gtest\Dynamic\$(Configuration);$(SolutionDir)Externals\libs\gmock\Dynamic\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>include;$(SolutionDir)Externals\includes;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Externals\libs\gtest\Dynamic\$(Configuration);$(LibraryPath)</LibraryPath>
     <ExecutablePath>$(SolutionDir)Externals\bin\gtest\$(PlatformTarget)\$(Configuration);$(ExecutablePath)</ExecutablePath>
     <OutDir>$(SolutionDir)Builds\$(ProjectName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir).inter\$(ProjectName)\$(Configuration)\</IntDir>
+    <LibraryPath>$(SolutionDir)Externals\libs\gtest\Dynamic\$(Configuration);$(SolutionDir)Externals\libs\gmock\Dynamic\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -71,7 +71,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>gtestd.lib;gtest_main-mdd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gtestd.lib;gtest_main-mdd.lib;gmock.lib;gmock_main.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
     </Link>
@@ -93,7 +93,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>gtest.lib;gtest_main-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gtest.lib;gtest_main-md.lib;gmock.lib;gmock_main.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>
       </AdditionalLibraryDirectories>
     </Link>
