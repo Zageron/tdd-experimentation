@@ -14,7 +14,7 @@
     <ProjectGuid>{ad810882-f575-4129-b03d-042dc26b6300}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SortingTests</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">

@@ -1,13 +1,14 @@
 #pragma once
 
-static int SizeOfArray(int* anArray)
+static bool ArraysAreEqual(int* array0, int* array1, int size)
 {
-	int size = 0;
-
-	if (anArray != nullptr)
+	for (size_t i = 0; i < size; i++)
 	{
-		size = sizeof(anArray) * sizeof(anArray[0]);
+		if (array0[i] != array1[i])
+		{
+			return false;
+		}
 	}
 
-	return size;
+	return true;
 }
