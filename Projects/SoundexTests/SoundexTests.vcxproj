@@ -100,7 +100,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SoundexTEsts.cc" />
+    <ClCompile Include="SoundexTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Soundex\Soundex.vcxproj">
