@@ -100,10 +100,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SoundexTests.cc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="SoundexTests.h" />
+    <ClCompile Include="SoundexTEsts.cc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Soundex\Soundex.vcxproj">

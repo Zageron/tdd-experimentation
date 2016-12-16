@@ -1,21 +1,28 @@
 #include "gmock\gmock.h"
-using ::testing::Eq;
+#include "Soundex.h"
 
+using namespace testing;
 
-class Soundex
+class SoundexEncoding : public Test
 {
 public:
-	std::string encode(const std::string& word) const
-	{
-		return word;
-	}
+	Soundex soundex;
 };
 
-TEST(SoundexEncoding, RetainsSoleLetterOfOneLetterWord)
+
+TEST_F(SoundexEncoding, RetainsSoleLetterOfOneLetterWord)
 {
-	Soundex soundex;
+	ASSERT_THAT(soundex.encode("A"), Eq("A000"));
+}
 
-	auto encoded = soundex.encode("A");
+TEST_F(SoundexEncoding, PadsWithZerosToEnsureThreeDigits)
+{
+	ASSERT_THAT(soundex.encode("I"), Eq("I000"));
+}
 
-	ASSERT_THAT(encoded, Eq("A"));
+TEST_F(SoundexEncoding, ReplacesConsonantsWithAppropriateDigits)
+{
+	EXPECT_THAT(soundex.encode("Ab"), Eq("A100"));
+	EXPECT_THAT(soundex.encode("Ac"), Eq("A200"));
+	EXPECT_THAT(soundex.encode("Ad"), Eq("A300"));
 }
