@@ -1,13 +1,16 @@
 #pragma once
 #include <string>
 #include <unordered_map>
+#include <cctype>
 
 class Soundex
 {
 public:
+	static const size_t MaxCodeLength{ 4u };
+
 	std::string encode(const std::string& word) const
 	{
-		return zeroPad(head(word) + encodedDigits(tail(word)));
+		return zeroPad(upperFront(head(word)) + encodedDigits(tail(word)));
 	}
 
 	std::string encodedDigit(const char letter) const
@@ -21,12 +24,17 @@ public:
 			{ 'n', "5" },{ 'r', "6" }
 		};
 
-		auto pair = encodings.find(letter);
-		return pair == encodings.end() ? "" : pair->second;
+		auto pair = encodings.find(lower(letter));
+		return pair == encodings.end() ? NotADigit : pair->second;
 	}
 
 private:
-	static const size_t MaxCodeLength{ 4 };
+	const std::string NotADigit { "*" };
+
+	char lower(char c) const
+	{
+		return std::tolower(static_cast<unsigned char>(c));
+	}
 
 	std::string head(const std::string& word) const
 	{
@@ -42,7 +50,7 @@ private:
 	{
 		if (encoding.empty())
 		{
-			return "";
+			return NotADigit;
 		}
 		else
 		{
@@ -60,7 +68,8 @@ private:
 				break;
 			}
 
-			if (encodedDigit(letter) != lastDigit(encoding))
+			auto digit = encodedDigit(letter);
+			if (digit != NotADigit && digit != lastDigit(encoding))
 			{
 				encoding += encodedDigit(letter);
 			}
@@ -78,5 +87,10 @@ private:
 	{
 		auto zerosNeeded = MaxCodeLength - word.length();
 		return word + std::string(zerosNeeded, '0');
+	}
+
+	std::string upperFront(const std::string& string) const
+	{
+		return std::string(1, std::toupper(static_cast<unsigned char>(string.front())));
 	}
 };
