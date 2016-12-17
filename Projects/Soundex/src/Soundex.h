@@ -10,7 +10,7 @@ public:
 
 	std::string encode(const std::string& word) const
 	{
-		return zeroPad(upperFront(head(word)) + encodedDigits(tail(word)));
+		return zeroPad(upperFront(head(word)) + tail(encodedDigits(word)));
 	}
 
 	std::string encodedDigit(const char letter) const
@@ -61,9 +61,12 @@ private:
 	std::string encodedDigits(const std::string& word) const
 	{
 		std::string encoding;
-		for (auto letter : word)
+
+		encoding += encodedDigit(word.front());
+
+		for (auto letter : tail(word))
 		{
-			if (encodingIsComplete(encoding))
+			if (isComplete(encoding))
 			{
 				break;
 			}
@@ -78,9 +81,9 @@ private:
 		return encoding;
 	}
 
-	bool encodingIsComplete(const std::string& encoding) const
+	bool isComplete(const std::string& encoding) const
 	{
-		return encoding.length() == MaxCodeLength - 1;
+		return encoding.length() == MaxCodeLength;
 	}
 
 	std::string zeroPad(const std::string& word) const
