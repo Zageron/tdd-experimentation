@@ -1,8 +1,8 @@
-#include "gmock\gmock.h"
+#include "gmock/gmock.h"
 #include "Soundex.h"
 
 // Pseudo Code
-// 1. Retain the first letter.Drop all other occurrences of a, e, i, o, u, y, h, w.
+// 1. Retain the first letter. Drop all other occurrences of a, e, i, o, u, y, h, w.
 //
 // 2. Replace consonants with digits(after the first letter) :
 //     � b, f, p, v : 1
